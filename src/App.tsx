@@ -4,10 +4,14 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 import './App.scss';
 import Footer from './components/Footer';
+import Header from './components/Header';
 
 function App() {
   return (
-    <Footer />
+    <>
+      <Header />
+      <Footer />
+    </>
   );
 }
 
