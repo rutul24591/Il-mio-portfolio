@@ -1,0 +1,70 @@
+// .hand-wave {
+//     animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+//     animation-duration: 2.1s; /* Change to speed up or slow down */
+//     animation-iteration-count: infinite; /* Never stop waving :) */
+//     transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+//     display: inline-block;
+// }
+
+.typewriter-content-container{
+    text-align: left;
+    padding-left: 80px;
+    font-size: 30px;
+}
+
+.home-primary-section{
+    position: relative;
+    padding-top: 30px!important;
+    padding-bottom: 30px!important;
+    background-position: top center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.home-secondary-section {
+    position: relative;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.home-about-me-container{
+    color:#FFFFFF!important;
+    text-align: left;
+    padding-top: 50px!important;
+    padding-bottom: 50px!important;
+}
+
+.home-about-me-body{
+    padding-top: 50px;
+    font-size: 32px!important;
+    text-align: left;
+}
+
+.home-main-image{
+    max-height: 400px;
+    background-color: blue;
+}
+
+.home-content {
+    padding: 150px 0 64px!important;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+.home-header {
+    padding-top: 120px!important;
+}
+
+.heading-one{
+    font-size: 60px !important;
+    padding-left: 80px !important;
+}
+
+.heading-name-container{
+    font-size: 60px!important;
+    padding-left: 80px!important;
+}
+
+.heading-name{
+    color: #FAAFCC;
+}

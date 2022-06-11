@@ -1,10 +1,12 @@
 .footer-container{
-    padding: 10px 0px;
+    // padding: 10px 0px;
     // color:  #E5E5E5;
     // color: #FFBB0B;
     // color: #FFBB0E;
     // color: #FAAFCC;
     color: #FFFFFF;
+    bottom: 0!important;
+    // position: sticky!important;
 }
 
 .footer-social {
@@ -18,7 +20,7 @@
         justify-content: center;
         align-items: center;
         li{
-            padding: 10px 15px;
+            padding: 15px 15px;
             svg{
                 &:hover{
                     color: #FAAFCC;
@@ -31,12 +33,20 @@
 
 .footer-copyrights {
     text-align: center!important;
-    padding: 10px 15px;
+    // padding: 10px 15px;
+    h6 {
+        padding-top: 15px!important;
+        padding-bottom: 15px!important;
+    }
 }
   
 .footer-body {
     text-align: center!important;
-    padding: 10px 15px;
+    h6 {
+        padding-top: 15px!important;
+        padding-bottom: 15px!important;
+    }
+    // padding: 10px 15px;
 }
 
 
