@@ -15,7 +15,7 @@ const Footer = () => {
     return(
         <Container fluid className="footer-container">
             <Row>
-                <Col md="4" className="footer-social">
+                <Col md="6" className="footer-social">
                     <ul>
                         <li>
                             <a 
@@ -59,11 +59,8 @@ const Footer = () => {
                         </li>
                     </ul>
                 </Col>
-                <Col md="4" className="footer-body">
-                    <h6>Designed and Developed by <i>Rutul Amin</i></h6>
-                </Col>
-                <Col md="4" className="footer-copyrights">
-                    <h6>Copyright @2022 Rutul Amin</h6>
+                <Col md="6" className="footer-copyrights">
+                    <h6>Copyright @2022 <span className="footer-copyright-text"><i>Rutul Amin</i></span></h6>
                 </Col>
             </Row>
         </Container>

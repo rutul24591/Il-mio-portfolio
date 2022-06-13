@@ -14,6 +14,7 @@
     "@types/node": "^16.7.13",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
+    "avataaars": "^2.0.0",
     "axios": "^0.27.2",
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",

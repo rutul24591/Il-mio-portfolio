@@ -1,12 +1,6 @@
 .footer-container{
-    // padding: 10px 0px;
-    // color:  #E5E5E5;
-    // color: #FFBB0B;
-    // color: #FFBB0E;
-    // color: #FAAFCC;
     color: #FFFFFF;
     bottom: 0!important;
-    // position: sticky!important;
 }
 
 .footer-social {
@@ -23,7 +17,7 @@
             padding: 15px 15px;
             svg{
                 &:hover{
-                    color: #FAAFCC;
+                    color: #ac69bc;
                     cursor: pointer;
                 }
             }
@@ -33,28 +27,19 @@
 
 .footer-copyrights {
     text-align: center!important;
-    // padding: 10px 15px;
     h6 {
         padding-top: 15px!important;
         padding-bottom: 15px!important;
     }
 }
   
-.footer-body {
-    text-align: center!important;
-    h6 {
-        padding-top: 15px!important;
-        padding-bottom: 15px!important;
-    }
-    // padding: 10px 15px;
+
+.footer-copyright-text{
+    color: #ac69bc;
 }
 
 
 @media (max-width: 767px) {
-    .footer-body {
-        text-align: center!important;
-    }
-
     .footer-copyrights {
       text-align: center!important;
     }

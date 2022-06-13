@@ -4,7 +4,10 @@ import './index.scss';
 
 const About = () => {
     return(
-        <h1>About</h1>
+        <>
+            <h1>About</h1>
+            <h3>Under Construction...</h3>
+        </>   
     );
 }
 

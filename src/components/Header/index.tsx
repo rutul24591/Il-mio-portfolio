@@ -30,7 +30,7 @@ const Header = () => {
                 expanded={expanded}
                 className={navbarColour ? "sticky" : "navbar"}
             >
-                <Container>
+                <Container className="navbar-container">
                     <Navbar.Brand href="/">
                         <img src={ Logo } alt="RA" width={90} height={90}/>
                     </Navbar.Brand>
@@ -41,7 +41,7 @@ const Header = () => {
                             setExpanded(expanded ? false : true);
                         }}
                     >
-                        <FontAwesomeIcon icon={faHamburger} color="#6A4C93" className="fa-hamburger fa-2xl"/>
+                        <FontAwesomeIcon icon={faHamburger} color="#ac69bc" className="fa-hamburger fa-2xl"/>
                     </Navbar.Toggle>
                     <Navbar.Collapse id="navbar-nav">
                         <Nav className="mx-auto" defaultActiveKey="#home">

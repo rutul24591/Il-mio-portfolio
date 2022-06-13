@@ -1,7 +1,8 @@
 import React from "react"; 
 import { Col, Container, Row } from "react-bootstrap";
+import Avatar from 'avataaars';
 
-import Developer from '../../assets/images/dev3.gif';
+import Developer from '../../assets/images/abstract2.png';
 
 import './index.scss';
 import TypewriterContent from "./TypewriterContent";
@@ -29,7 +30,7 @@ const Home = () => {
                                 <TypewriterContent />
                             </div>
                         </Col>
-                        <Col md={6} className="home-image-container">
+                        <Col md={6} sm={12} className="home-image-container">
                             <img src={Developer} alt="home" className="home-main-image"/> 
                         </Col>
                     </Row>
@@ -38,16 +39,35 @@ const Home = () => {
             <Container fluid className="home-secondary-section" id="about">
                 <Container>
                     <Row>
-                        <Col md={4} className="avatar-container">
-
+                        <Col md={6} sm={12} className="avatar-container">
+                            <div className="avatar-content-container">
+                                <Avatar
+                                    avatarStyle='Transparent'
+                                    topType='ShortHairShortFlat'
+                                    accessoriesType='Blank'
+                                    hairColor='Black'
+                                    facialHairType='BeardLight'
+                                    facialHairColor='Black'
+                                    clotheType='Hoodie'
+                                    clotheColor='Black'
+                                    eyeType='Default'
+                                    eyebrowType='FlatNatural'
+                                    mouthType='Default'
+                                    skinColor='Light'
+                                />
+                            </div>               
                         </Col>
-                        <Col md={8} className="home-about-me-container">
-                            <h1>Introduction</h1>
+                        <Col md={6} sm={12} className="home-about-me-container">
+                            <h1 className="home-pink-text">Introductions<span className="introduction-header-span-text"> are in order</span></h1>
+                            <br/>
                             <p className="home-about-me-body">
-                                I'm a software engineer by profession, mostly working as a full stack developer with main focus on React, Gatsby, NodeJs.
-                                I like to spend my time in developing and building awesome products and User Interfaces. 
-                                I also like to solve Data structure problems on various platforms.
-                                My area of interest currently is learning blockchain and building D'APPs.
+                                I'm a <b className="home-pink-text">software engineer</b> by profession, mostly working as a full stack developer with main focus on <b className="home-pink-text">React</b> and <b className="home-pink-text">NodeJs</b>.
+                                <br/><br/>
+                                I like to spend my time in learning new technologies and use that to build awesome<b className="home-pink-text"> products</b> and <b className="home-pink-text">User interfaces</b>. 
+                                <br/><br/>
+                                Nowadays my area of interest is in <b className="home-pink-text">blockchain technology</b> and building <b className="home-pink-text">Dapps</b> using <b className="home-pink-text">Smart contracts</b>.
+                                <br/><br/>
+                                I would love to work in area of <b className="home-pink-text">blockchain application development</b> where I could work on <b className="home-pink-text">front end</b> part along with handling and programming new smart contracts to build <b className="home-pink-text">Dapps</b>.
                             </p>
                         </Col>
                     </Row>
