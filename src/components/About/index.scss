@@ -1,3 +1,29 @@
-.about-section {
-    color: #FFFFFF!important;
+.about-section-container {
+  color: #ffffff !important;
+  position: relative !important;
+  padding-top: 60px;
+  padding-bottom: 20px;
+  .about-me-tech-stack {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 100px;
+    .about-tech-stack-header {
+      color: #ffffff;
+    }
+
+    .about-tech-stack-header-span {
+      color: #ac69bc;
+    }
+
+    .about-tech-stack-more {
+      font-size: 36px;
+      padding: 50px;
+    }
+  }
+  .about-me-calendar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
