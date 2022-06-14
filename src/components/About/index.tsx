@@ -1,13 +1,13 @@
-import React from "react"; 
+import React from "react";
+import Calendar from '../GithubCalendar'; 
 
 import './index.scss';
 
 const About = () => {
     return(
-        <>
-            <h1>About</h1>
-            <h3>Under Construction...</h3>
-        </>   
+        <div className="about-section">
+            <Calendar />
+        </div>   
     );
 }
 

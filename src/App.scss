@@ -55,3 +55,15 @@ text {
     transform: rotate(360deg);
   }
 }
+
+.pink-text { 
+  color: #ac69bc;
+}
+
+.about-calendar-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  width: 100%;
+}
