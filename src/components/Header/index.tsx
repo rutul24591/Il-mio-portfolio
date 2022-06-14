@@ -8,6 +8,7 @@ import {
   faSuitcase,
   faProjectDiagram,
   faHamburger,
+  faFilePdf
 } from "@fortawesome/free-solid-svg-icons";
 
 import Logo from "../../assets/images/logo.jpg";
@@ -120,6 +121,20 @@ const Header = () => {
                     className="fa-envelope fa-lg"
                   />
                   Contact
+                </Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link
+                  as={Link}
+                  to="/resume"
+                  onClick={() => setExpanded(false)}
+                >
+                  <FontAwesomeIcon
+                    icon={faFilePdf}
+                    color="#FFFFFF"
+                    className="fa-file-pdf fa-lg"
+                  />
+                  Resume
                 </Nav.Link>
               </Nav.Item>
             </Nav>

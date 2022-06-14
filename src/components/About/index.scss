@@ -26,4 +26,15 @@
     justify-content: center;
     align-items: center;
   }
+  .about-me-row {
+    padding-top: 100px;
+    .about-me-text {
+        text-align: center;
+        font-size: 28px;
+    }
+  }
+}
+
+.purple-colored-text {
+    color: #ac69bc;
 }

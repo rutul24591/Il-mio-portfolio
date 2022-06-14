@@ -13,6 +13,7 @@ import Contact from './components/Contact';
 import About from './components/About';
 import WorkEx from './components/WorkEx';
 import Projects from './components/Projects';
+import Resume from './components/Resume';
 
 const App = () => {
   const [loaded, setLoaded] = useState(true);
@@ -37,6 +38,7 @@ const App = () => {
           <Route path="/workex" element={<WorkEx/>} />
           <Route path="/projects" element={<Projects/>} />
           <Route path="/contact" element={<Contact/>} />
+          <Route path="/resume" element={<Resume/>} />
           <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
         <Footer />
