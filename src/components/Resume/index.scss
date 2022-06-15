@@ -4,6 +4,8 @@
 }
 
 .resume-row {
+    display: flex;
+    justify-content: center;
     .react-pdf__Page{
         border:1px solid #ac69bc!important;
     }
@@ -39,4 +41,11 @@
         padding-right: 15px!important;
     }
 }
+
+@media screen and (min-width: 767px) and (max-width: 1200px) {
+    .resume-container {
+        padding-top: 150px;
+        padding-bottom: 100px;
+    }
+  }
 
