@@ -9,7 +9,7 @@ import {
   faFilePdf
 } from "@fortawesome/free-solid-svg-icons";
 
-import Logo from "../../assets/images/logo.jpg";
+import Logo from "../../assets/images/logo2.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import "./index.scss";
