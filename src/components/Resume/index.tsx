@@ -3,12 +3,14 @@ import React, { useEffect, useState } from "react";
 import { Container, Row, Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
-import { Document, Page, pdfjs } from "react-pdf/dist/esm/entry.webpack";
+import { Document, Page } from "react-pdf/dist/esm/entry.webpack";
 
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
+import resume from '../../assets/files/resume_rutul_amin(15:06:22).pdf';
+
 import './index.scss';
 
-const link = 'https://drive.google.com/file/d/1n5FdaBWq2ZNCx90Rodik9vWtvKHfKJ2b/view?usp=sharing';
+const link = 'https://drive.google.com/file/d/1DPxBMw3Xu-Ltk5HKf2PVN3NBa_8UlJK2/view?usp=sharing';
+
 const Resume = () => {
     const [width, setWidth] = useState(1200);
 
@@ -18,20 +20,20 @@ const Resume = () => {
 
     return(
         <Container fluid className="resume-container">
-            <Row>
+            <Row className="download-button-row">
                 <Button
                     variant="primary"
-                    href="../../assets/../assets/files/RutulAminResume(12152021)"
+                    href={link}
                     target="_blank"
-                    style={{maxWidth : "300px"}}
+                    className="download-button"
                 >
                     <FontAwesomeIcon icon={ faDownload } color="#FFFFFF" />
                     Download
                 </Button>
             </Row>
             <Row className="resume-row">
-                <Document file={link} className="d-flex justify-content-center">
-                    <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
+                <Document file={resume} className="resume-document-viewer">
+                    <Page pageNumber={1} scale={width > 786 ? 1.8 : 0.6} />
                 </Document>
             </Row>
         </Container>

@@ -2,11 +2,10 @@ import React from "react";
 import { Container, Col, Row} from "react-bootstrap";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-    faLinkedin,
     faGithub,
-    faSkype,
     faMedium,
     faTwitter,
+    faLinkedinIn,
 } from '@fortawesome/free-brands-svg-icons';
 
 import './index.scss';
@@ -19,43 +18,39 @@ const Footer = () => {
                     <ul>
                         <li>
                             <a 
-                                href="https://www.google.com"
+                                href="https://medium.com/@ramin24591"
                                 target="_blank"
                                 rel="noreferrer"
-                            />
-                            <FontAwesomeIcon icon={faLinkedin} color="#FFFFFF" className="fa-linkedin fa-xl"/>
-                        </li>
-                        <li>
-                            <a 
-                                href="https://www.google.com"
-                                target="_blank"
-                                rel="noreferrer"
-                            />
+                            >
                             <FontAwesomeIcon icon={faMedium} color="#FFFFFF" className="fa-medium fa-xl"/>
+                            </a>
                         </li>
                         <li>
                             <a 
-                                href="https://www.google.com"
+                                href="https://twitter.com/rv591"
                                 target="_blank"
                                 rel="noreferrer"
-                            />
-                            <FontAwesomeIcon icon={faSkype} color="#FFFFFF" className="fa-skype fa-xl"/>
+                            >
+                            <FontAwesomeIcon icon={faTwitter} color="#FFFFFF" className="fa-skype fa-xl"/>
+                            </a>
                         </li>
                         <li>
                             <a 
-                                href="https://www.google.com"
+                                href="https://www.github.com/rutul24591"
                                 target="_blank"
                                 rel="noreferrer"
-                            />
+                            >
                             <FontAwesomeIcon icon={faGithub} color="#FFFFFF" className="fa-github fa-xl"/>
+                            </a>
                         </li>
                         <li>
                             <a 
-                                href="https://www.google.com"
+                                href="https://www.linkedin.com/in/aminrutul75498b159"
                                 target="_blank"
                                 rel="noreferrer"
-                            />
-                            <FontAwesomeIcon icon={faTwitter} color="#FFFFFF" className="fa-twitter fa-xl"/>
+                            >
+                            <FontAwesomeIcon icon={faLinkedinIn} color="#FFFFFF" className="fa-linked-in fa-xl"/>
+                            </a>
                         </li>
                     </ul>
                 </Col>
