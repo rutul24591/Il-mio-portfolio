@@ -13,7 +13,7 @@ const link = 'https://drive.google.com/file/d/1DPxBMw3Xu-Ltk5HKf2PVN3NBa_8UlJK2/
 
 
 const Resume = () => {
-    const [width, setWidth] = useState(1200);
+    const [width, setWidth] = useState(window.innerWidth);
     const [scale, setScale] = useState(1);
 
     useEffect(() => {

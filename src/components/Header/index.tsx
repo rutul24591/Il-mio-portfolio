@@ -4,9 +4,7 @@ import { Link } from "react-router-dom";
 import {
   faHome,
   faUser,
-  faEnvelope,
   faSuitcase,
-  faProjectDiagram,
   faHamburger,
   faFilePdf
 } from "@fortawesome/free-solid-svg-icons";
@@ -93,34 +91,6 @@ const Header = () => {
                     className="fa-suitcase fa-lg"
                   />
                   WorkEx
-                </Nav.Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Nav.Link
-                  as={Link}
-                  to="/projects"
-                  onClick={() => setExpanded(false)}
-                >
-                  <FontAwesomeIcon
-                    icon={faProjectDiagram}
-                    color="#FFFFFF"
-                    className="fa-project-diagram fa-lg"
-                  />
-                  Projects
-                </Nav.Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Nav.Link
-                  as={Link}
-                  to="/contact"
-                  onClick={() => setExpanded(false)}
-                >
-                  <FontAwesomeIcon
-                    icon={faEnvelope}
-                    color="#FFFFFF"
-                    className="fa-envelope fa-lg"
-                  />
-                  Contact
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item>
