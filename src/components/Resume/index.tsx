@@ -5,10 +5,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import { Document, Page } from "react-pdf/dist/esm/entry.webpack";
 
-import resume from '../../assets/files/resume_rutul_amin(15:06:22).pdf';
+import resume from '../../assets/files/resume_rutul_amin(09:07:22).pdf';
 import './index.scss';
 
-const link = 'https://drive.google.com/file/d/1DPxBMw3Xu-Ltk5HKf2PVN3NBa_8UlJK2/view?usp=sharing';
+const link = 'https://drive.google.com/file/d/1F4vlW1qXZCJYFD7qY2_1ag12-tO_XZrS/view?usp=sharing';
 
 
 

@@ -60,10 +60,10 @@ const Home = () => {
             <Col md={6} sm={12} className="home-about-me-container">
               <h1 className="home-pink-text">
                 Introductions
-                <span className="introduction-header-span-text">
+                {/* <span className="introduction-header-span-text">
                   {" "}
                   are in order
-                </span>
+                </span> */}
               </h1>
               <br />
               <p className="home-about-me-body">

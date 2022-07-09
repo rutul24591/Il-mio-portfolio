@@ -14,7 +14,7 @@ const WorkEx = () => {
                         <h5>San Jose, CA, USA</h5>
                         <h6>[2014-2015]</h6>
                     </Col> 
-                    <Col md={12} className="education-column">
+                    <Col md={12} className="education-column py-3 mt-5">
                         <h4 className="purple-colored-text">AHMEDABAD INSTITUTE OF TECHNOLOGY(AIT)</h4>
                         <h5>Ahmedabad, GJ, India</h5>
                         <h6>[2009-2013]</h6>

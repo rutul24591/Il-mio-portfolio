@@ -90,7 +90,7 @@ const Header = () => {
                     color="#FFFFFF"
                     className="fa-suitcase fa-lg"
                   />
-                  WorkEx
+                  Education & WorkEx
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item>
