@@ -58,13 +58,7 @@ const Home = () => {
               </div>
             </Col>
             <Col md={6} sm={12} className="home-about-me-container">
-              <h1 className="home-pink-text">
-                Introductions
-                {/* <span className="introduction-header-span-text">
-                  {" "}
-                  are in order
-                </span> */}
-              </h1>
+              <h1 className="home-pink-text">Introductions</h1>
               <br />
               <p className="home-about-me-body">
                 I'm a <b className="home-pink-text">software engineer</b> by

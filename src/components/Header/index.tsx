@@ -6,7 +6,7 @@ import {
   faUser,
   faSuitcase,
   faHamburger,
-  faFilePdf
+  faFilePdf,
 } from "@fortawesome/free-solid-svg-icons";
 
 import Logo from "../../assets/images/logo2.png";

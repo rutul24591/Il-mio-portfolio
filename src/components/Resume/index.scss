@@ -1,51 +1,51 @@
 .resume-container {
-    padding-top: 100px;
-    padding-bottom: 50px;
+  padding-top: 100px;
+  padding-bottom: 50px;
 }
 
 .resume-row {
+  display: flex;
+  justify-content: center;
+  .react-pdf__Page {
+    border: 1px solid #ac69bc !important;
+  }
+  .resume-document-viewer {
     display: flex;
     justify-content: center;
-    .react-pdf__Page{
-        border:1px solid #ac69bc!important;
-    }
-    .resume-document-viewer {
-        display: flex;
-        justify-content: center;
-    }
+  }
 }
 
-.download-button-row{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.download-button-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .download-button {
+  background: #ac69bc;
+  color: #f2f2f2;
+  border-radius: 12px;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: none;
+  border: none;
+  max-width: 200px;
+  &:hover {
     background: #ac69bc;
-    color: #F2F2F2;
-    border-radius: 12px;
-    margin: 10px;
-    padding: 10px;
+  }
+  &:focus,
+  :active {
     box-shadow: none;
-    border: none;
-    max-width: 200px;
-    &:hover{
-        background: #ac69bc;
-    }
-    &:focus, :active{
-        box-shadow: none;
-        background: #ac69bc;
-    }
-    svg {
-        padding-right: 15px!important;
-    }
+    background: #ac69bc;
+  }
+  svg {
+    padding-right: 15px !important;
+  }
 }
 
 @media screen and (min-width: 767px) and (max-width: 1200px) {
-    .resume-container {
-        padding-top: 150px;
-        padding-bottom: 100px;
-    }
+  .resume-container {
+    padding-top: 150px;
+    padding-bottom: 100px;
   }
-
+}

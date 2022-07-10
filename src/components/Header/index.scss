@@ -14,9 +14,9 @@
   font-size: 1.2rem !important;
 }
 
-.navbar-nav {
-  background-color: #000000;
-}
+// .navbar-nav {
+//   background-color: #000000;
+// }
 
 .navbar-toggler {
   position: relative !important;
@@ -34,7 +34,7 @@
 }
 
 .navbar-nav .nav-link {
-  color: #F2F2F2 !important;
+  color: #f2f2f2 !important;
   padding-left: 1rem !important;
   padding-right: 1rem !important;
 }
@@ -75,7 +75,7 @@
 
 @media screen and (max-width: 767px) {
   .navbar {
-    background-color: #000000;
+    // background-color: #000000;
     .navbar-nav .nav-item a:hover::after {
       width: 35%;
       left: 35%;
