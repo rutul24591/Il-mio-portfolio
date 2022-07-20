@@ -1,8 +1,9 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import Avatar from "avataaars";
+// import Avatar from "avataaars";
 
-import Developer from "../../assets/images/abstract2.png";
+// import Developer from "../../assets/images/abstract2.png";
+import Developer from "../../assets/images/dev2.jpg";
 
 import "./index.scss";
 import TypewriterContent from "./TypewriterContent";
@@ -39,7 +40,7 @@ const Home = () => {
       <Container fluid className="home-secondary-section" id="about">
         <Container>
           <Row>
-            <Col md={6} sm={12} className="avatar-container">
+            {/* <Col md={6} sm={12} className="avatar-container">
               <div className="avatar-content-container">
                 <Avatar
                   avatarStyle="Transparent"
@@ -56,8 +57,8 @@ const Home = () => {
                   skinColor="Light"
                 />
               </div>
-            </Col>
-            <Col md={6} sm={12} className="home-about-me-container">
+            </Col> */}
+            <Col md={12} sm={12} className="home-about-me-container">
               <h1 className="home-pink-text">Introductions</h1>
               <br />
               <p className="home-about-me-body">
