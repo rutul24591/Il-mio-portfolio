@@ -1,8 +1,5 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-// import Avatar from "avataaars";
-
-// import Developer from "../../assets/images/abstract2.png";
 import Developer from "../../assets/images/dev2.jpg";
 
 import "./index.scss";
