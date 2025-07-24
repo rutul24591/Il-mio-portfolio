@@ -17,7 +17,7 @@ import resume from '../../assets/files/RUTUL_AMIN_Resume(24:07:2025).pdf';
 import './index.scss';
 
 const link =
-	'https://drive.google.com/file/d/1dW5jD7BSjILAb17AtAmXpceRxEwIn2o9/view?usp=sharing';
+	'https://drive.google.com/file/d/1DEGylpXqc9AWHG3fExpDG34ygmO7eiMM/view?usp=sharing';
 
 const Resume = () => {
 	const [width, setWidth] = useState(window.innerWidth);
