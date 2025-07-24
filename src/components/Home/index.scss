@@ -1,209 +1,209 @@
 .typewriter-content-container {
-  text-align: left;
-  font-size: 30px;
+	text-align: left;
+	font-size: 30px;
 }
 
 .home-primary-section {
-  position: relative;
-  padding-top: 30px !important;
-  padding-bottom: 30px !important;
-  background-position: top center;
-  background-repeat: no-repeat;
-  z-index: -1;
+	position: relative;
+	padding-top: 30px !important;
+	padding-bottom: 30px !important;
+	background-position: top center;
+	background-repeat: no-repeat;
+	z-index: -1;
 }
 
 .home-secondary-section {
-  position: relative;
-  padding-top: 80px;
-  padding-bottom: 80px;
+	position: relative;
+	padding-top: 80px;
+	padding-bottom: 80px;
 }
 
 .home-about-me-container {
-  color: #f2f2f2 !important;
-  text-align: left;
-  padding-top: 50px !important;
-  padding-bottom: 50px !important;
-  padding-left: 0px;
-  padding-right: 0px;
+	color: #f2f2f2 !important;
+	text-align: left;
+	padding-top: 50px !important;
+	padding-bottom: 50px !important;
+	padding-left: 0px;
+	padding-right: 0px;
 }
 
 .home-about-me-body {
-  font-size: 20px !important;
-  // text-align: left;
+	font-size: 20px !important;
+	// text-align: left;
 }
 
 .home-main-image {
-  max-height: 400px;
-  background-color: blue;
+	max-height: 400px;
+	// background-color: blue;
 }
 
 .home-content {
-  padding: 150px 0 64px !important;
-  color: #f2f2f2;
-  text-align: left;
+	padding: 150px 0 64px !important;
+	color: #f2f2f2;
+	text-align: left;
 }
 
 .home-header {
-  padding-top: 120px !important;
+	padding-top: 120px !important;
 }
 
 .heading-one {
-  font-size: 60px !important;
-  // padding-left: 80px !important;
+	font-size: 60px !important;
+	// padding-left: 80px !important;
 }
 
 .heading-name-container {
-  font-size: 60px !important;
-  // padding-left: 80px!important;
+	font-size: 60px !important;
+	// padding-left: 80px!important;
 }
 
 .heading-name {
-  color: #ac69bc;
+	color: #ac69bc;
 }
 
 .home-pink-text {
-  color: #ac69bc;
+	color: #ac69bc;
 }
 
 .introduction-header-span-text {
-  color: #f2f2f2;
+	color: #f2f2f2;
 }
 
 .avatar-container {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
 }
 
 .avatar-content-container {
-  height: 250px;
-  width: 250px;
-  max-height: 320px;
-  max-width: 320px;
-  background: #ac69bc;
-  border-radius: 50%;
-  overflow: hidden;
-  svg {
-    width: 210px !important;
-    height: 238px !important;
-  }
+	height: 250px;
+	width: 250px;
+	max-height: 320px;
+	max-width: 320px;
+	background: #ac69bc;
+	border-radius: 50%;
+	overflow: hidden;
+	svg {
+		width: 210px !important;
+		height: 238px !important;
+	}
 }
 
 @media screen and (max-width: 500px) {
-  .home-main-image {
-    width: 100%;
-    height: 300px;
-  }
+	.home-main-image {
+		width: 100%;
+		height: 300px;
+	}
 
-  .avatar-container {
-    justify-content: center !important;
-    align-items: center;
-  }
+	.avatar-container {
+		justify-content: center !important;
+		align-items: center;
+	}
 
-  .home-image-container {
-    padding-top: 100px;
-    max-height: 300px;
-    width: 100%;
-  }
+	.home-image-container {
+		padding-top: 100px;
+		max-height: 300px;
+		width: 100%;
+	}
 
-  .home-about-me-container {
-    text-align: center !important;
-    padding-bottom: 20px !important;
-    .home-about-me-body {
-      text-align: center !important;
-    }
-  }
+	.home-about-me-container {
+		text-align: center !important;
+		padding-bottom: 20px !important;
+		.home-about-me-body {
+			text-align: center !important;
+		}
+	}
 
-  .home-secondary-section {
-    padding-bottom: 40px;
-  }
+	.home-secondary-section {
+		padding-bottom: 40px;
+	}
 
-  .home-header {
-    padding-top: 0px !important;
-    .heading-one,
-    .heading-name-container,
-    .typewriter-content-container {
-      text-align: center !important;
-    }
-  }
+	.home-header {
+		padding-top: 0px !important;
+		.heading-one,
+		.heading-name-container,
+		.typewriter-content-container {
+			text-align: center !important;
+		}
+	}
 }
 
 @media screen and (min-width: 501px) and (max-width: 767px) {
-  .home-main-image {
-    width: 100%;
-    height: 300px;
-  }
+	.home-main-image {
+		width: 100%;
+		height: 300px;
+	}
 
-  .home-content {
-    padding-top: 50px !important;
-    .home-header {
-      padding-top: 0px;
-      .heading-one,
-      .heading-name-container,
-      .typewriter-content-container {
-        text-align: center;
-      }
-    }
-  }
+	.home-content {
+		padding-top: 50px !important;
+		.home-header {
+			padding-top: 0px;
+			.heading-one,
+			.heading-name-container,
+			.typewriter-content-container {
+				text-align: center;
+			}
+		}
+	}
 
-  .avatar-container {
-    justify-content: center !important;
-    align-items: center;
-  }
+	.avatar-container {
+		justify-content: center !important;
+		align-items: center;
+	}
 
-  .home-image-container {
-    padding-top: 100px;
-    max-height: 300px;
-    width: 100%;
-  }
+	.home-image-container {
+		padding-top: 100px;
+		max-height: 300px;
+		width: 100%;
+	}
 
-  .home-about-me-container {
-    text-align: center !important;
-    padding-bottom: 20px !important;
-    .home-about-me-body {
-      text-align: center !important;
-    }
-  }
+	.home-about-me-container {
+		text-align: center !important;
+		padding-bottom: 20px !important;
+		.home-about-me-body {
+			text-align: center !important;
+		}
+	}
 
-  .home-secondary-section {
-    padding-bottom: 40px;
-  }
+	.home-secondary-section {
+		padding-bottom: 40px;
+	}
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  .home-image-container {
-    display: flex;
-    align-items: center !important;
-    .home-main-image {
-      width: 100% !important;
-    }
-  }
+	.home-image-container {
+		display: flex;
+		align-items: center !important;
+		.home-main-image {
+			width: 100% !important;
+		}
+	}
 
-  .home-header {
-    padding-top: 0px !important;
-    text-align: left;
-  }
+	.home-header {
+		padding-top: 0px !important;
+		text-align: left;
+	}
 
-  .home-secondary-section {
-    padding-top: 20px !important;
-  }
+	.home-secondary-section {
+		padding-top: 20px !important;
+	}
 }
 
 @media screen and (min-width: 992px) and (max-width: 1400px) {
-  .home-image-container {
-    display: flex;
-    align-items: center !important;
-    .home-main-image {
-      width: 100% !important;
-    }
-  }
+	.home-image-container {
+		display: flex;
+		align-items: center !important;
+		.home-main-image {
+			width: 100% !important;
+		}
+	}
 
-  .home-header {
-    padding-top: 0px !important;
-    text-align: left;
-  }
+	.home-header {
+		padding-top: 0px !important;
+		text-align: left;
+	}
 
-  .home-secondary-section {
-    padding-top: 20px !important;
-  }
+	.home-secondary-section {
+		padding-top: 20px !important;
+	}
 }

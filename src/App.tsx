@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import { preload } from 'react-dom';
 
 import './App.scss';
 import Footer from './components/Footer';
@@ -14,6 +15,10 @@ import WorkEx from './components/WorkEx';
 import Resume from './components/Resume';
 
 const App = () => {
+	preload('./assets/images/dev2.jpg', {
+		as: 'image',
+		fetchPriority: 'high',
+	});
 	const [loaded, setLoaded] = useState(true);
 
 	useEffect(() => {
