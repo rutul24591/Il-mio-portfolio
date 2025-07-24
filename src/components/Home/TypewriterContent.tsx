@@ -8,8 +8,6 @@ const TypewriterContent = () => {
 					'Front End Developer',
 					'React Developer',
 					'Software Engineer',
-					'Blockchain Application Developer',
-					'Blockchain enthusiast',
 				],
 				autoStart: true,
 				loop: true,
