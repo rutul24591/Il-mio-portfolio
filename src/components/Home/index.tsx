@@ -1,4 +1,3 @@
-import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import Developer from '../../assets/images/dev2.jpg';
 

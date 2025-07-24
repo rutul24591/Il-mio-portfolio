@@ -1,4 +1,3 @@
-import React from 'react';
 import { Container, Row } from 'react-bootstrap';
 import Calendar from '../GithubCalendar';
 import TechStack from '../TechStack';
