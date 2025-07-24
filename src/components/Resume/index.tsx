@@ -13,11 +13,11 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
 	import.meta.url,
 ).toString();
 
-import resume from '../../assets/files/Rutul-resume(10:03:25).pdf';
+import resume from '../../assets/files/RUTUL_AMIN_Resume(24:07:2025).pdf';
 import './index.scss';
 
 const link =
-	'https://drive.google.com/file/d/1F4vlW1qXZCJYFD7qY2_1ag12-tO_XZrS/view?usp=sharing';
+	'https://drive.google.com/file/d/1dW5jD7BSjILAb17AtAmXpceRxEwIn2o9/view?usp=sharing';
 
 const Resume = () => {
 	const [width, setWidth] = useState(window.innerWidth);
