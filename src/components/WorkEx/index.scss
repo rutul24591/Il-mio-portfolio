@@ -1,0 +1,49 @@
+.work-education-section-container {
+  color: #f2f2f2 !important;
+  position: relative !important;
+  padding-top: 150px;
+  padding-bottom: 20px;
+  .work-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    .work-column {
+      padding: 30px;
+      color: #f2f2f2;
+      border: 1px solid #ac69bc;
+      border-radius: 12px;
+      margin: 10px 0px;
+    }
+    .work-education-text {
+      text-align: center;
+      font-size: 28px;
+    }
+  }
+  .work-header {
+    padding: 20px;
+  }
+
+  .education-header {
+    padding: 20px;
+  }
+
+  .education-row {
+    display: block;
+    padding: 10px;
+    .education-column {
+      padding: 20px;
+      color: #f2f2f2;
+      border: 1px solid #ac69bc;
+      border-radius: 12px;
+      margin: 10px 0px;
+    }
+    .work-education-text {
+      text-align: center;
+      font-size: 28px;
+    }
+  }
+}
+
+.purple-colored-text {
+  color: #ac69bc;
+}

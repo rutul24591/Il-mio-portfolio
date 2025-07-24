@@ -1,0 +1,53 @@
+{
+	"name": "portfolio-lts",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc -b && vite build",
+		"lint": "eslint .",
+		"preview": "vite preview"
+	},
+	"dependencies": {
+		"@fortawesome/fontawesome-svg-core": "^7.0.0",
+		"@fortawesome/free-brands-svg-icons": "^7.0.0",
+		"@fortawesome/free-solid-svg-icons": "^7.0.0",
+		"@fortawesome/react-fontawesome": "^0.2.3",
+		"@testing-library/jest-dom": "^6.6.3",
+		"@testing-library/react": "^16.3.0",
+		"@testing-library/user-event": "^14.6.1",
+		"@types/jest": "^30.0.0",
+		"@types/node": "^24.1.0",
+		"@types/react-pdf": "^7.0.0",
+		"axios": "^1.11.0",
+		"bootstrap": "^5.3.7",
+		"font-awesome": "^4.7.0",
+		"react": "^17.0.0",
+		"react-bootstrap": "^2.10.10",
+		"react-dom": "^19.1.0",
+		"react-github-calendar": "^4.5.9",
+		"react-parallax": "^3.5.2",
+		"react-parallax-tilt": "^1.7.301",
+		"react-pdf": "^10.0.1",
+		"react-router-dom": "^7.7.0",
+		"sass": "^1.89.2",
+		"typewriter-effect": "^2.22.0"
+	},
+	"devDependencies": {
+		"@eslint/js": "^9.30.1",
+		"@types/react": "^19.1.8",
+		"@types/react-dom": "^19.1.6",
+		"@vitejs/plugin-react": "^4.6.0",
+		"eslint": "^9.30.1",
+		"eslint-plugin-react-hooks": "^5.2.0",
+		"eslint-plugin-react-refresh": "^0.4.20",
+		"globals": "^16.3.0",
+		"typescript": "~5.8.3",
+		"typescript-eslint": "^8.35.1",
+		"vite": "^7.0.4"
+	},
+	"peerDependencies": {
+		"react": "^17.0.0"
+	}
+}
