@@ -53,8 +53,8 @@ const Home = () => {
                 <br />
                 Currently looking for{" "}
                 <b className="home-pink-text">Front end developer </b>roles with
-                <b className="home-pink-text">React, NextJS</b> and
-                <b className="home-pink-text">MERN Stack</b>.
+                <b className="home-pink-text"> React, NextJS</b> and
+                <b className="home-pink-text"> MERN Stack</b>.
               </p>
             </Col>
           </Row>
