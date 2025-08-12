@@ -55,15 +55,6 @@ const Home = () => {
                 <b className="home-pink-text">Front end developer </b>roles with
                 <b className="home-pink-text">React, NextJS</b> and
                 <b className="home-pink-text">MERN Stack</b>.
-                {/* <br />
-								<br />I would love to work in area of{' '}
-								<b className='home-pink-text'>
-									blockchain application development
-								</b>{' '}
-								where I could work on{' '}
-								<b className='home-pink-text'>front end</b> part along with
-								handling and programming new smart contracts to build{' '}
-								<b className='home-pink-text'>Dapps</b>. */}
               </p>
             </Col>
           </Row>
