@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { Container, Navbar, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import {
@@ -18,15 +18,31 @@ const Header = () => {
 	const [expanded, setExpanded] = useState(false);
 	const [navbarColour, setNavbarColour] = useState(false);
 
-	const handleScroll = () => {
-		if (window.scrollY >= 20) {
-			setNavbarColour(true);
-		} else {
-			setNavbarColour(false);
-		}
-	};
+	// refs to avoid re-creating handlers on each render and to keep last state
+	const lastIsSticky = useRef(!!navbarColour);
+	const ticking = useRef(false);
 
-	window.addEventListener('scroll', handleScroll);
+	useEffect(() => {
+		// use requestAnimationFrame to throttle scroll updates
+		const onScroll = () => {
+			if (ticking.current) return;
+			ticking.current = true;
+			requestAnimationFrame(() => {
+				const shouldBeSticky = window.scrollY >= 20;
+				if (lastIsSticky.current !== shouldBeSticky) {
+					lastIsSticky.current = shouldBeSticky;
+					setNavbarColour(shouldBeSticky);
+				}
+				ticking.current = false;
+			});
+		};
+
+		window.addEventListener('scroll', onScroll, { passive: true });
+		return () => window.removeEventListener('scroll', onScroll);
+	}, []);
+
+	const toggleExpanded = useCallback(() => setExpanded((e) => !e), []);
+	const closeNav = useCallback(() => setExpanded(false), []);
 
 	return (
 		<>
@@ -43,9 +59,7 @@ const Header = () => {
 					<Navbar.Toggle
 						className={expanded ? 'expanded' : 'collapsed'}
 						aria-controls='navbar-nav'
-						onClick={() => {
-							setExpanded(expanded ? false : true);
-						}}
+						onClick={toggleExpanded}
 					>
 						<FontAwesomeIcon
 							icon={faHamburger}
@@ -56,7 +70,7 @@ const Header = () => {
 					<Navbar.Collapse id='navbar-nav'>
 						<Nav className='mx-auto' defaultActiveKey='#home'>
 							<Nav.Item>
-								<Nav.Link as={Link} to='/' onClick={() => setExpanded(false)}>
+								<Nav.Link as={Link} to='/' onClick={closeNav}>
 									<FontAwesomeIcon
 										icon={faHome}
 										color='#FFFFFF'
@@ -69,7 +83,7 @@ const Header = () => {
 								<Nav.Link
 									as={Link}
 									to='/about'
-									onClick={() => setExpanded(false)}
+									onClick={closeNav}
 								>
 									<FontAwesomeIcon
 										icon={faUser}
@@ -83,7 +97,7 @@ const Header = () => {
 								<Nav.Link
 									as={Link}
 									to='/workex'
-									onClick={() => setExpanded(false)}
+									onClick={closeNav}
 								>
 									<FontAwesomeIcon
 										icon={faSuitcase}
@@ -97,7 +111,7 @@ const Header = () => {
 								<Nav.Link
 									as={Link}
 									to='/resume'
-									onClick={() => setExpanded(false)}
+									onClick={closeNav}
 								>
 									<FontAwesomeIcon
 										icon={faFilePdf}
@@ -115,4 +129,4 @@ const Header = () => {
 	);
 };
 
-export default Header;
+export default React.memo(Header);

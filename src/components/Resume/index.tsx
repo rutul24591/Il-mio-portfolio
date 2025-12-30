@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 import { Container, Row, Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
@@ -20,29 +20,24 @@ const link =
   "https://drive.google.com/file/d/1EEfMmcQ7HDJ43Wpx0c1E0gjhK8J1T2wo/view?usp=sharing";
 
 const Resume = () => {
-  const [width, setWidth] = useState(window.innerWidth);
-  const [scale, setScale] = useState(1);
+  const [width, setWidth] = useState(
+    typeof window !== "undefined" ? window.innerWidth : 1024
+  );
 
   useEffect(() => {
     const onResize = () => setWidth(window.innerWidth);
-    window.addEventListener("resize", onResize);
+    window.addEventListener("resize", onResize, { passive: true });
     return () => {
       window.removeEventListener("resize", onResize);
     };
-  }, [setWidth]);
+  }, []);
 
-  useEffect(() => {
-    if (width <= 500) {
-      setScale(0.6);
-    } else if (width > 500 && width <= 767) {
-      setScale(0.8);
-    } else if (width > 767 && width <= 991) {
-      setScale(1.2);
-    } else if (width > 991 && width <= 1200) {
-      setScale(1.4);
-    } else {
-      setScale(1.6);
-    }
+  const scale = useMemo(() => {
+    if (width <= 500) return 0.6;
+    if (width > 500 && width <= 767) return 0.8;
+    if (width > 767 && width <= 991) return 1.2;
+    if (width > 991 && width <= 1200) return 1.4;
+    return 1.6;
   }, [width]);
 
   return (

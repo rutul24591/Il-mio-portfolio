@@ -1,7 +1,6 @@
 import { useState, useEffect, lazy, Suspense } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
-import { preload } from "react-dom";
 
 import "./App.scss";
 import Footer from "./components/Footer";
@@ -19,11 +18,12 @@ const WorkExComponent = lazy(() => import("./components/WorkEx"));
 const ResumeComponent = lazy(() => import("./components/Resume"));
 
 const App = () => {
-  console.log("DEBUG: App component rendered");
-  preload("./assets/images/dev2.jpg", {
-    as: "image",
-    fetchPriority: "high",
-  });
+  // Prefetch main developer image (bundle path resolved via import.meta.url)
+  useEffect(() => {
+    const img = new Image();
+    img.src = new URL("./assets/images/dev2.jpg", import.meta.url).toString();
+  }, []);
+
   const [loaded, setLoaded] = useState(true);
 
   useEffect(() => {

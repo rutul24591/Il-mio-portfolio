@@ -1,5 +1,6 @@
 import { Col, Container, Row } from "react-bootstrap";
 import Developer from "../../assets/images/dev2.jpg";
+import { memo } from "react";
 
 import "./index.scss";
 import TypewriterContent from "./TypewriterContent";
@@ -28,7 +29,12 @@ const Home = () => {
               </div>
             </Col>
             <Col md={6} sm={12} className="home-image-container">
-              <img src={Developer} alt="home" className="home-main-image" />
+              <img
+                src={Developer}
+                alt="home"
+                className="home-main-image"
+                loading="lazy"
+              />
             </Col>
           </Row>
         </Container>
@@ -64,4 +70,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default memo(Home);
