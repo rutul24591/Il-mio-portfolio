@@ -13,13 +13,14 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
   import.meta.url
 ).toString();
 
-import resume from "../../assets/files/RUTUL_V_AMIN_RESUME(12:11:25).pdf";
+import resume from "../../assets/files/RUTUL_V_AMIN_RESUME(30:12:2025).pdf";
 import "./index.scss";
 
 const link =
-  "https://drive.google.com/file/d/1EEfMmcQ7HDJ43Wpx0c1E0gjhK8J1T2wo/view?usp=sharing";
+  "https://drive.google.com/file/d/1npoCw6WWU1esVX8r5Efm6rvbQvV3dW9U/view?usp=sharing";
 
 const Resume = () => {
+  console.log("Resume Rendered");
   const [width, setWidth] = useState(
     typeof window !== "undefined" ? window.innerWidth : 1024
   );
